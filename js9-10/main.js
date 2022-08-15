@@ -364,10 +364,10 @@ function validateSalary() {
 }
 /* Validate Chức Vụ */
 function validatePosition() {
-  let postion = dom("#chucvu").value;
+  let position = dom("#chucvu").value;
   let spanEl = dom("#tbChucVu");
 
-  if (!postion) {
+  if (!position) {
     spanEl.style.display = "Block";
     spanEl.innerHTML = "Phải Chọn Đúng Chức Vụ, không được để trống";
     return false;
