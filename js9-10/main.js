@@ -250,7 +250,7 @@ function validateId() {
     spanEl.innerHTML = "Tài Khoản Nhân Viên Không Để Trống";
     return false;
   }
-  if (!isNumber(account) || account.length < 4 || account.length > 6) {
+  if (account.length < 4 || account.length > 6) {
     spanEl.style.display = "Block";
     spanEl.innerHTML = "Tài Khoản nhân viên nhập từ 4 đến 6 ký số!";
     return false;
